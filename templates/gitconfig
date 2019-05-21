@@ -1,0 +1,11 @@
+[user]
+	name = Stefan Niehaus
+	email = niehaus.stefan@gmail.com
+[core]
+	editor = emacs -nw
+[color]
+	ui = true
+[format]
+	pretty = oneline
+[push]
+	default = simple

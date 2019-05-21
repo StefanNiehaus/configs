@@ -9,8 +9,9 @@ function zshConfig {
   sudo apt-get install curl
   sudo apt-get install git
 
-  printf "[INFO] Basic install of oh-my-zsh via curl"
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  printf "[INFO] Basic install of oh-my-zsh via curl\n"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &
+  wait
 
   printf "[INFO] Original zshrc settings can be found in /home/$USER/.zshrc~\n"
   ln -sb $PWD/templates/zshrc /home/$USER/.zshrc
